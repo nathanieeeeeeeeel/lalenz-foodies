@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lalen's Foodies</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/Public/Css/style.css" rel="stylesheet">
+  <link rel="icon" href="Public/Assets/Images/logo.png" type="image/png">
+  
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-yellow-400 shadow-md">
+    <nav class="container mx-auto py-4">
+      <div class="flex items-center justify-between lg:px-2 sm:px-7">
+        <div class="flex justify-between">
+            <img src="Public/Assets/Images/logo.png" class="shadow-lg" style="border-radius: 100%;" width="50px">
+            <a class="text-2xl font-bold text-white mt-2 ml-2 hidden lg:block md:block sm:block" href="#">Lalen's Foodies</a>
+        </div>
+        <!-- Navigation Links -->
+        <div class="hidden lg:block">
+          <ul class="flex justify-between mt-1">
+            <li class="mr-6">
+              <a class="text-white hover:text-gray-300" href="#">Home</a>
+            </li>
+            <li class="relative mr-6">
+              <a class="text-white hover:text-gray-300" href="#">Menu</a>
+              <ul class="absolute hidden bg-gray-800 text-white mt-2 rounded-md">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Desserts</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Treats</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Other</a></li>
+              </ul>
+            </li>            
+            <li class="mr-6">
+              <a class="text-white hover:text-gray-300" href="#">Order Online</a>
+            </li>
+            <li class="mr-6">
+              <a class="text-white hover:text-gray-300" href="#">About Us</a>
+            </li>
+            <li class="mr-6">
+              <a class="text-white hover:text-gray-300" href="#">Contact</a>
+            </li>
+            <li class="mr-6">
+              <a class="sm:block lg:hidden text-white hover:text-gray-300" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+        <span class="navbar-toggler lg:block sm:hidden">
+          <button class="text-white px-4 py-2 rounded-full bg-blue-500 hover:bg-blue-600 font-bold">Sign In</button>
+        </span>
+      </div>
+      
+    </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero py-16 shadow-sm bg-gray-200">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Delicious Food Delivered to Your Doorstep</h1>
+      <p class="text-lg mb-8">Order from a wide variety of cuisines and enjoy the convenience of home delivery.</p>
+      <div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Learn More</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Menu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+<section id="menu" class="menu py-16">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-gray-700 mb-8 text-center">Featuring</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="menu-item">
+        <img class="mb-2 shadow-lg rounded-full mx-auto" src="Public/Assets/Images/Food Items/Sotanghon bilao.jpg" width="280px" alt="Sotanghon">
+        <h3 class="text-xl font-semibold mb-2 text-center">Sotanghon</h3>
+        <p class="text-gray-500 text-center">Delicious beef patty with fresh vegetables and cheese.</p>
+      </div>
+      <div class="menu-item">
+        <img class="mb-2 shadow-lg rounded-full mx-auto" src="Public/Assets/Images/Food Items/Palabok bilao.jpg" width="280px" alt="Lecheflan">
+        <h3 class="text-xl font-semibold mb-2 text-center">Special Palabok</h3>
+        <p class="text-gray-500 text-center">Taste our delicious special palabok.</p>
+      </div>
+      <div class="menu-item">
+        <img class="mb-2 shadow-lg rounded-full mx-auto" src="Public/Assets/Images/Food Items/Lumpia shanghai.jpg" width="280px" alt="Lumpia/Siomai">
+        <h3 class="text-xl font-semibold mb-2 text-center">Special Lumpia Shanghai</h3>
+        <p class="text-gray-500 text-center">Freshly prepared lumpia and siomai with high-quality ingredients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in turpis nulla. Mauris at dui vel mi mollis aliquam. Curabitur tincidunt orci vel erat varius faucibus. Nullam mattis semper eleifend.</p>
+      <a href="#contact" class="btn btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <p>We're here to help you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+    <form action="contact.php" method="post">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <input type="text" name="phone" placeholder="Your Phone Number">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-800 text-white">
+    <div class="container mx-auto py-8">
+      <div class="flex flex-col items-center justify-between">
+        <div class="w-full text-center">
+          <p class="mb-4">&copy; 2023 Lalenz Foodies</p>
+          <p>Made with Tailwind CSS</p>
+        </div>
+        <div class="flex flex-row justify-center">
+          <a href="#" class="mx-2 text-white hover:text-gray-300">About Us</a>
+          <a href="#" class="mx-2 text-white hover:text-gray-300">Contact Us</a>
+          <a href="#" class="mx-2 text-white hover:text-gray-300">Privacy Policy</a>
+          <a href="#" class="mx-2 text-white hover:text-gray-300">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+  <script src="/Public/Script/script.js"></script>
+</body>
+</html>
