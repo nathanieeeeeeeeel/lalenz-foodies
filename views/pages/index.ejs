@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalenz Foodies</title>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="/"><img id="header-logo" src="/public/Images/logo.png" /></a>
+        </div>
+        <h1>Lalenz Foodies</h1>
+        <p>A Good Food For All Neighborhood</p>
+    </header>
+    <nav>
+        <ul>
+            <li class="mr-auto"></li>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="ml-auto"><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Lalenz Foodies!</h2>
+        <p>Enjoy delicious, freshly prepared meals that bring the community together.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>At Lalenz Foodies, we are passionate about serving fresh and delicious meals to our community.</p>
+    </section>
+    <section id="menu" class="section menu">
+        <h2>Our Menu</h2>
+        <p>Explore our diverse menu filled with mouth-watering dishes made with the finest ingredients.</p>
+        <a href="/menu" class="btn">View Menu</a>
+    </section>
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at our Official Facebook Pages:</p>
+        <a href="https://facebook.com/lalenz.lalenz">@lalenz.lalenz</a>
+        <span>/</span>
+        <a href="https://facebook.com/lalenz.foodies">@lalenz.foodies</a>
+        
+    </section>
+    <%- include(process.cwd() + "/views/partials/footer") %>
+</body>
+</html>
